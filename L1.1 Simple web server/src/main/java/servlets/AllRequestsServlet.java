@@ -19,6 +19,7 @@ import java.util.Map;
  */
 public class AllRequestsServlet extends HttpServlet {
 
+    @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
 
@@ -32,6 +33,7 @@ public class AllRequestsServlet extends HttpServlet {
 
     }
 
+    @Override
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
         Map<String, Object> pageVariables = createPageVariablesMap(request);
